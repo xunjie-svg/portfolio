@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Tan Xun Jie — Technical Game Designer</title>
+<meta name="description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
+<meta name="theme-color" content="#12151a" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Tan Xun Jie — Technical Game Designer" />
+<meta property="og:description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
+<meta property="og:site_name" content="Tan Xun Jie" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Tan Xun Jie — Technical Game Designer" />
+<meta name="twitter:description" content="Technical game designer working across scripting, VFX, behavior trees, and tools since 2020." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <a class="mark" href="#top" aria-label="Back to top">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path d="M4 8 L16 4 L28 8 L16 12 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M16 12 L16 28" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M4 8 L4 22 L16 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M28 8 L28 22 L16 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="#about" data-nav>About</a>
+    <a href="#work" data-nav>Work</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+
+  <a class="nav-cta" href="mailto:tanxunjie@hotmail.com">Email</a>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">Technical Game Designer</p>
+        <h1 class="hero-name">Tan Xun Jie</h1>
+        <p class="hero-lead">Building behavior, tools, and feel for games since 2020 — scripting, VFX, behavior trees, and the tools that hold a production together.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-graph" role="img" aria-label="Illustration of a behavior tree: a root node splits into a selector, which splits into two sequences, each ending in leaf actions such as chase and attack.">
+        <svg viewBox="0 0 640 360" class="graph-svg" aria-hidden="true">
+          <g class="edges" stroke="currentColor" stroke-width="1.5" fill="none">
+            <path d="M320 66 V110" />
+            <path d="M320 146 C320 170, 190 178, 165 192" />
+            <path d="M320 146 C320 170, 450 178, 475 192" />
+            <path d="M165 228 C165 250, 105 262, 95 282" />
+            <path d="M165 228 C165 250, 225 262, 235 282" />
+            <path d="M475 228 C475 250, 415 262, 405 282" />
+            <path d="M475 228 C475 250, 545 262, 555 282" />
+          </g>
+
+          <g class="nodes" font-family="'IBM Plex Mono', monospace" font-size="13">
+            <g class="node node-root" transform="translate(265,30)">
+              <rect width="110" height="36" rx="4"/>
+              <text x="55" y="23" text-anchor="middle">Root</text>
+            </g>
+            <g class="node node-selector" transform="translate(258,110)">
+              <rect width="124" height="36" rx="4"/>
+              <text x="62" y="23" text-anchor="middle">Selector</text>
+            </g>
+            <g class="node node-seq" transform="translate(103,192)">
+              <rect width="124" height="36" rx="4"/>
+              <text x="62" y="23" text-anchor="middle">Sequence</text>
+            </g>
+            <g class="node node-seq" transform="translate(413,192)">
+              <rect width="124" height="36" rx="4"/>
+              <text x="62" y="23" text-anchor="middle">Sequence</text>
+            </g>
+            <g class="node node-leaf" transform="translate(38,282)">
+              <rect width="114" height="36" rx="4"/>
+              <text x="57" y="23" text-anchor="middle">Track target</text>
+            </g>
+            <g class="node node-leaf" transform="translate(178,282)">
+              <rect width="114" height="36" rx="4"/>
+              <text x="57" y="23" text-anchor="middle">Chase</text>
+            </g>
+            <g class="node node-leaf" transform="translate(348,282)">
+              <rect width="114" height="36" rx="4"/>
+              <text x="57" y="23" text-anchor="middle">Wind up</text>
+            </g>
+            <g class="node node-leaf node-active" transform="translate(498,282)">
+              <rect width="114" height="36" rx="4"/>
+              <text x="57" y="23" text-anchor="middle">Attack</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About</h2>
+      <blockquote class="statement">
+        "Making game development fun is the first step to making a game that's enjoyable."
+      </blockquote>
+      <p class="about-body">The work is deeply technical and touches many parts of development at once: scripting, VFX, behavior trees, and tools. Whatever the task, the goal stays the same — leave a positive mark on anything worked on.</p>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work-banner-band">
+      <div class="section-inner">
+        <h2 class="work-banner">Professional work</h2>
+      </div>
+    </div>
+
+    <div class="section-inner">
+      <article class="entry">
+        <div class="entry-body">
+          <h3>Lords of the Fallen 2</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/0mQSqfMlw2k" title="Lords of the Fallen 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Worked with CI Games in Unreal Engine, managing four enemies including one mini-boss. Set up behavior trees and Blueprint behaviors, then tuned animation to hit the Souls-like gameplay feel the series demands.</p>
+
+          <div class="entry-sub">
+            <h4>Enemy behavior trees</h4>
+            <p>An enemy's behavior tree in Unreal Engine: initialization, then a selector choosing between blocks/parries, priority actions, cooldown-gated attacks, and repositioning based on the blackboard state.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_BehaviorTrees.png" alt="Unreal Engine behavior tree graph for an enemy: a root and selector nodes branching into Enemy Initialization, Blocks/Parries, Priority Actions, an Attacks group with tag-cooldown-gated dash and quick attacks, and a Reposition node." loading="lazy" />
+              </button>
+              <figcaption>Behavior tree for one of the enemies.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Custom Blueprint behaviors</h4>
+            <p>A Blueprint node graph for a ranged attack: spawning a projectile actor at a transform built from the owning hero's location and rotation, then assigning the result to the enemy's Projectile reference.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_BP.png" alt="Unreal Engine Blueprint graph: Make Transform and Get Owning Hero Character feeding into a SpawnActor node for BP Fire Projectile, with the result set to a Projectile variable." loading="lazy" />
+              </button>
+              <figcaption>Blueprint logic for spawning a fired projectile.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Animation tweaking/prototyping</h4>
+            <p>Previewing and tuning an enemy's reload animation montage in Unreal's animation editor, adjusting segment timing (start/end time, play rate, loop count) against the character in the viewport to hit the right feel.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_AnimationSequence.png" alt="Unreal Engine animation montage editor previewing a reload animation on a mannequin character, with a Load/Drop/Lock segment timeline and Animation Segment details panel showing start time, end time, play rate, and loop count." loading="lazy" />
+              </button>
+              <figcaption>Tuning a reload montage in the animation editor.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-body">
+          <h3>Parallel</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/6ibGQYGYaIw" title="Parallel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Card and deck UX</h4>
+            <p>The deck builder's UX: laid out first as a wireframe mock-up with placeholder cards and copy, then built out with real card art, faction identity, and live deck stats (unit/relic/upgrade/effect counts and a cost curve).</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Parallel_DeckBuilder_Mockup.png" alt="Wireframe mock-up of the deck builder: placeholder deck name and card count, a faction header, deck-composition stats, a cost curve, and a grid of placeholder cards labeled Card Name Here." loading="lazy" />
+                </button>
+                <figcaption>Wireframe mock-up.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Parallel_DeckBuilder_Actual.png" alt="Shipped deck builder for Parallel: the Augencore Starter Deck under the Juggernaut Workshop faction, with real unit, upgrade, and effect cards, deck-composition stats, and a cost curve." loading="lazy" />
+                </button>
+                <figcaption>Shipped in-game implementation.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Card rules and implementation management</h4>
+            <p>The card database driving implementation: rules text, flavor text, rarity, faction, type/subtype, attack/health/cost, release pack, and tutorial-card flagging per card, checked against a live in-game card preview.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Parallel_CardManagement.png" alt="A card database spreadsheet next to a live in-game card preview: columns for id, card name, description, flavor text, rarity, faction, type, subtype, attack, health, cost, release pack, and tutorial-card flag, with the H.A.D.E.S. War Mech unit card rendered from its row's data." loading="lazy" />
+              </button>
+              <figcaption>Card data spreadsheet driving the in-game card implementation.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-body">
+          <h3>Paper Heroes</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/VlxWkFnVvdY" title="Paper Heroes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Feature development</h4>
+            <p>Design documentation for the climbing tower feature: theming (platforms as enemy strongholds, conquest flags), tower UX (featured enemies and rewards set in data), data-driven background transitions, and platform tiers by floor.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Paper_Heroes_FeatureDevelopment.png" alt="Design document for the tower feature: an in-game screenshot of the tower climb with numbered skirmish floors, next to theming notes, general tower UX (flag states, featured enemy, rewards), a data-driven sky-to-space background transition spec, and platform tiers (Boss Floor every 50 floors, Hard Floor every 10, Normal Floor)." loading="lazy" />
+              </button>
+              <figcaption>Theming, tower UX, background transitions, and platform tiers.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Workflow tools for prototyping</h4>
+            <p>A spreadsheet-driven map generator for the Gauntlet mode: a lettered/numbered grid of encounter and utility tiles (normal/hard/boss encounters, recruitment, medical zones) with a legend and a Generate Map Data action, checked against the in-game floor layout.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Paper_Heroes_Workflow.png" alt="A Gauntlet-floor screenshot with a branching hex-tile path, next to a spreadsheet map-generation tool: a lettered/numbered grid of tile codes (Enc_N, Enc_H, Enc_Boss, Med_Heal, Med_Rev, Recruit, Start) with a Generate Map Data button and a legend defining each tile element." loading="lazy" />
+              </button>
+              <figcaption>Spreadsheet map generator for the Gauntlet mode's floor layouts.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>A/B testing</h4>
+            <p>The Firebase architecture behind the game's A/B testing: the backend API and Firebase's real-time database exchanging data, then reaching the frontend web app and Android client over real-time DB sync and Firebase Cloud Messaging.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Firebase_AB_Testing.png" alt="Firebase architecture diagram: a backend API application connected to Firebase's real-time database, which reaches a frontend web app and an Android mobile app via real-time DB sync and Firebase Cloud Messaging (FCM)." loading="lazy" />
+              </button>
+              <figcaption>Firebase data flow supporting the game's A/B tests.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-body">
+          <h3>Dissidia Final Fantasy Opera Omnia</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/85GI-rnBESU" title="Dissidia Final Fantasy Opera Omnia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>My first experience on a mobile title. Built an automation tool that cut data tasks — work that used to eat significant designer time because of legacy issues — down to minutes.</p>
+
+          <div class="entry-sub">
+            <h4>Settings menu rework</h4>
+            <p>A redesign proposal for the settings menu: consolidating the original's two-panel, all-options-at-once layout into a single panel with left-hand category tabs (Game, Sound, Privacy) and a Restore Defaults action.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/OperaOmnia_SettingsMenu.png" alt="Original settings menu: two side-by-side panels showing Energy Saving Settings and Push Notifications on the left, and Sound volume sliders on the right, all visible at once." loading="lazy" />
+                </button>
+                <figcaption>Original settings menu.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/OperaOmnia_SettingsMenu_ReworkMockup.png" alt="Rework mock-up of the settings menu: a single panel with left-hand category tabs for Game, Sound, and Privacy, the Sound tab open showing volume sliders and a Restore Defaults button." loading="lazy" />
+                </button>
+                <figcaption>Rework mock-up.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Colorblind mode</h4>
+            <p>A colorblind-accessible palette for the gear and abilities screen, checked against a blue-blind (tritanopia) simulation alongside full color, comparing the normal UI palette to the colorblind-mode palette in each case.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/OperaOmnia_Colorblind_Mode.png" alt="A 2x2 comparison of the Gear/Abilities screen: rows for a blue-blind (tritanopia) simulation and full color, columns for the Normal palette and the Colorblind Mode palette, showing the panel and icon color shifts made for accessibility." loading="lazy" />
+              </button>
+              <figcaption>Normal vs. Colorblind Mode, under full color and a tritanopia simulation.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Co-op matchmaking QOL</h4>
+            <p>A quality-of-life proposal for co-op mission matchmaking: adding an "Either" option alongside Host and Guest, so a player auto-joins an open party as a guest, or starts as host automatically when no slots are open, instead of guessing which to pick.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Co-op_Options.png" alt="Original co-op quest-start prompt: 'Embark upon mission as:' with two choices, Host and Guest." loading="lazy" />
+                </button>
+                <figcaption>Original: Host or Guest only.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Co-op_Options_Rework.png" alt="Rework of the co-op quest-start prompt, adding a third Either option, with a help tooltip explaining that tapping Either joins as a guest if slots are open, or starts the quest as host if not." loading="lazy" />
+                </button>
+                <figcaption>Rework: added Either, with an explanatory tooltip.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Data setup automation</h4>
+            <p>The character event data setup tool referenced above: an Excel/VBA sheet that takes an event ID, its start and end times, the character name, and a reference event to pull global rewards from, then generates the event data in one click.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/OperaOmnia_Data_Setup_Automation.png" alt="Character Event Data Setup Tool spreadsheet: input fields for Event ID, Start Date Time, End Date Time, Character Name, and Reference Event (Global Rewards), with a Generate Data button." loading="lazy" />
+              </button>
+              <figcaption>The data setup tool's input sheet and Generate Data action.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-body">
+          <h3>War of the Visions: Final Fantasy Brave Exvius</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/znKIhbl0yTM" title="War of the Visions: Final Fantasy Brave Exvius" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Interned ahead of the game's global release, analyzing its data structures and codebase. Developed VBA-based visualization tools for data versioning that stayed in use for the rest of the project's lifespan.</p>
+
+          <div class="entry-sub">
+            <h4>Tutorial flow document</h4>
+            <p class="brief-context">First task on entering Gumi Asia.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Tutorial_Flow_Document.png" alt="Tutorial flow storyboard for War of the Visions: Final Fantasy Brave Exvius — five numbered in-game dialogue screenshots (Nerveua and Sterne in a village, then a riverside courtyard) laid out for moment-to-moment FTUE review, with blank annotation fields under each frame." loading="lazy" width="1162" height="705" />
+              </button>
+              <figcaption>Moment-to-moment storyboard from the tutorial flow proposal, annotated frame by frame.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Goals</p>
+                <ul>
+                  <li>Create a document for visualizing the entire tutorial</li>
+                  <li>Document used to petition for reducing the tutorial length for global release</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Obstacles</p>
+                <ul>
+                  <li>Existing tutorial was quite lengthy (500+ shots)</li>
+                  <li>No access to tools like Adobe Photoshop with batch automation</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Results</p>
+                <ul>
+                  <li>Created two tools using Unity C#
+                    <ul>
+                      <li>First tool took a high-quality screenshot on hotkey press, significantly reducing the time needed to slowly snip the screen</li>
+                      <li>Second tool went through all photos in a folder, placed them in an ordered structure, then took a screenshot</li>
+                    </ul>
+                  </li>
+                  <li>Inclusive of tool creation time, the task was completed within 3 working days, compared to the original allocation of 10 working days</li>
+                  <li>Also completed the extended goal of digging out attached analytics trackers within the week</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Data versioning compare tool</h4>
+            <p>A VBA-built comparison tool for versioning the game's character data: diffing old and new spreadsheet exports side by side to catch value changes before each release.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/data_versioning_comparison_tool.gif" alt="Animated demo of the VBA data-versioning tool in Excel: a character-stats spreadsheet (id, name, rarity, health, attack, defence, model, release version) with Old Data, New Data, and Diff sheet tabs used to compare versions." loading="lazy" />
+              </button>
+              <figcaption>Comparing character data between game data versions.</figcaption>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Global ad gacha feature</h4>
+            <p>A rewarded-video gacha system: a fill-up gauge tracks progress toward a free "Video Summon," rewarding players with Gil Snappers, Story Skip Tickets, and Visiore.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/VideoSummon_UX_Mockup.png" alt="Video Summon screen mock-up: a gacha reward panel over a ruined-castle backdrop, with a fill-up treasure-chest gauge reading 10 of 100, a rolls-remaining counter, and Summon / Watch Video buttons." loading="lazy" />
+                </button>
+                <figcaption>Mock-up of the Video Summon screen.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/WOTV_VideoSummon_Actual.png" alt="Shipped Video Summon screen in War of the Visions: Final Fantasy Brave Exvius, matching the mock-up's layout and gauge behavior in the live game." loading="lazy" />
+                </button>
+                <figcaption>Shipped in-game implementation.</figcaption>
+              </figure>
+            </div>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/VideoSummon_UX_Documentation.png" alt="UI state specification sheet: the treasure-chest gauge icon at its locked, slightly-open, and full-glow states (0, 10, and 100 points), and the two-phase progress bar, dim below 50 percent and bright with an outer glow at or above it." loading="lazy" />
+              </button>
+              <figcaption>State specification for the gauge icon and progress bar.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-lead">Reach out about a role, a project, or the work above.</p>
+      <a class="contact-email" href="mailto:tanxunjie@hotmail.com">tanxunjie@hotmail.com</a>
+      <a class="contact-linked" href="https://www.linkedin.com/in/xunjie-tan/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.37-3.9-2.38 0-2.74 1.86-2.74 3.78V24h-4V8z"/>
+        </svg>
+        linkedin.com/in/xunjie-tan
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>Tan Xun Jie</span>
+    <span>Technical Game Designer</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path d="M5 5 L19 19 M19 5 L5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <figure>
+    <img class="lightbox-img" src="" alt="" />
+    <figcaption class="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

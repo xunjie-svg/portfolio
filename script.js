@@ -1,0 +1,85 @@
+// Tan Xun Jie — portfolio
+// Small, functional enhancements only: active-section nav highlighting and the image lightbox.
+// No frameworks, no build step.
+
+(function () {
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[data-nav]'));
+  var sections = navLinks
+    .map(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      return document.getElementById(id);
+    })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var setCurrent = function (id) {
+      navLinks.forEach(function (link) {
+        var isCurrent = link.getAttribute('href') === '#' + id;
+        if (isCurrent) {
+          link.setAttribute('data-current', 'true');
+          link.setAttribute('aria-current', 'true');
+        } else {
+          link.removeAttribute('data-current');
+          link.removeAttribute('aria-current');
+        }
+      });
+    };
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setCurrent(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+    );
+
+    sections.forEach(function (section) { observer.observe(section); });
+  }
+})();
+
+(function () {
+  var lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+
+  var lbImg = lightbox.querySelector('.lightbox-img');
+  var lbCaption = lightbox.querySelector('.lightbox-caption');
+  var closeBtn = lightbox.querySelector('.lightbox-close');
+  var lastTrigger = null;
+
+  var onKeydown = function (e) {
+    if (e.key === 'Escape') close();
+  };
+
+  var open = function (trigger) {
+    var img = trigger.querySelector('img');
+    var caption = trigger.closest('figure').querySelector('figcaption');
+    lastTrigger = trigger;
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCaption.textContent = caption ? caption.textContent : '';
+    lightbox.hidden = false;
+    document.documentElement.classList.add('lightbox-open');
+    closeBtn.focus();
+    document.addEventListener('keydown', onKeydown);
+  };
+
+  var close = function () {
+    lightbox.hidden = true;
+    document.documentElement.classList.remove('lightbox-open');
+    lbImg.src = '';
+    document.removeEventListener('keydown', onKeydown);
+    if (lastTrigger) lastTrigger.focus();
+  };
+
+  Array.prototype.slice.call(document.querySelectorAll('.img-zoom')).forEach(function (btn) {
+    btn.addEventListener('click', function () { open(btn); });
+  });
+
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) close();
+  });
+})();
