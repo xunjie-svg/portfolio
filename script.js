@@ -45,6 +45,49 @@ initSectionNav('.nav a[data-nav]');
 initSectionNav('.work-nav a[data-work-nav]');
 
 (function () {
+  var toggle = document.getElementById('work-toggle');
+  var dropdown = document.getElementById('work-dropdown');
+  if (!toggle || !dropdown) return;
+
+  var MOBILE_QUERY = '(max-width: 1779.98px)';
+
+  var isOpen = function () { return !dropdown.hidden; };
+
+  var close = function () {
+    dropdown.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  var open = function () {
+    dropdown.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+  };
+
+  toggle.addEventListener('click', function (e) {
+    if (!window.matchMedia(MOBILE_QUERY).matches) return;
+    e.preventDefault();
+    if (isOpen()) { close(); } else { open(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!isOpen()) return;
+    if (e.target === toggle || toggle.contains(e.target) || dropdown.contains(e.target)) return;
+    close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen()) {
+      close();
+      toggle.focus();
+    }
+  });
+
+  dropdown.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') close();
+  });
+})();
+
+(function () {
   var lightbox = document.getElementById('lightbox');
   if (!lightbox) return;
 
