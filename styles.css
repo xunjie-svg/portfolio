@@ -393,6 +393,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   letter-spacing: -0.02em;
 }
 
+.entry-body h3:has(+ .brief-context) {
+  margin-bottom: 0.4rem;
+}
+
 .video-embed {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -532,7 +536,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   max-width: 640px;
 }
 
-.entry-figure + .entry-figure {
+.entry-figure + .entry-figure,
+.entry-figure + p {
   margin-top: 1.5rem;
 }
 
@@ -542,6 +547,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   align-items: start;
   gap: 1.25rem;
   max-width: 900px;
+}
+
+.entry-compare-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1180px;
 }
 
 .entry-compare .entry-figure {
@@ -559,7 +569,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   margin-top: 0;
 }
 
-.entry-compare + .entry-figure {
+.entry-compare + .entry-figure,
+.entry-compare + p {
   margin-top: 1.5rem;
 }
 
@@ -591,6 +602,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   font-size: 0.78rem;
   color: var(--muted);
 }
+
+/* ---------- student work ---------- */
+
+.student-work { padding-bottom: clamp(3rem, 6vw, 5rem); }
 
 /* ---------- contact ---------- */
 

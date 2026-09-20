@@ -43,10 +43,11 @@ function initSectionNav(linkSelector) {
 
 initSectionNav('.nav a[data-nav]');
 initSectionNav('.work-nav a[data-work-nav]');
+initSectionNav('.work-nav a[data-student-nav]');
 
-(function () {
-  var toggle = document.getElementById('work-toggle');
-  var dropdown = document.getElementById('work-dropdown');
+function initDropdownNav(toggleId, dropdownId) {
+  var toggle = document.getElementById(toggleId);
+  var dropdown = document.getElementById(dropdownId);
   if (!toggle || !dropdown) return;
 
   var MOBILE_QUERY = '(max-width: 1779.98px)';
@@ -85,7 +86,10 @@ initSectionNav('.work-nav a[data-work-nav]');
   dropdown.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') close();
   });
-})();
+}
+
+initDropdownNav('work-toggle', 'work-dropdown');
+initDropdownNav('student-work-toggle', 'student-work-dropdown');
 
 (function () {
   var lightbox = document.getElementById('lightbox');

@@ -44,12 +44,26 @@
         </svg>
       </a>
       <div class="work-dropdown" id="work-dropdown" hidden>
-        <a href="#wotv">War of the Visions</a>
-        <a href="#opera-omnia">Dissidia Opera Omnia</a>
-        <a href="#paper-heroes">Paper Heroes</a>
-        <a href="#parallel">Parallel</a>
-        <a href="#lotf2">Lords of the Fallen 2</a>
         <a href="#undisclosed-aaa">Undisclosed AAA Game</a>
+        <a href="#lotf2">Lords of the Fallen 2</a>
+        <a href="#parallel">Parallel</a>
+        <a href="#paper-heroes">Paper Heroes</a>
+        <a href="#opera-omnia">Dissidia Opera Omnia</a>
+        <a href="#wotv">War of the Visions</a>
+      </div>
+    </div>
+
+    <div class="nav-work">
+      <a href="#student-work" data-nav id="student-work-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="student-work-dropdown">
+        Student work
+        <svg class="nav-work-caret" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true">
+          <path d="M1 1.5 L6 6.5 L11 1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-dropdown" id="student-work-dropdown" hidden>
+        <a href="#rift-in-time">A Rift in Time</a>
+        <a href="#kinoko">Kinoko</a>
+        <a href="#past-light">Past Light</a>
       </div>
     </div>
 
@@ -98,15 +112,486 @@
 
     <div class="work-layout">
       <nav class="work-nav" aria-label="Jump to a project">
-        <a href="#wotv" data-work-nav>War of the Visions</a>
-        <a href="#opera-omnia" data-work-nav>Dissidia Opera Omnia</a>
-        <a href="#paper-heroes" data-work-nav>Paper Heroes</a>
-        <a href="#parallel" data-work-nav>Parallel</a>
-        <a href="#lotf2" data-work-nav>Lords of the Fallen 2</a>
         <a href="#undisclosed-aaa" data-work-nav>Undisclosed AAA Game</a>
+        <a href="#lotf2" data-work-nav>Lords of the Fallen 2</a>
+        <a href="#parallel" data-work-nav>Parallel</a>
+        <a href="#paper-heroes" data-work-nav>Paper Heroes</a>
+        <a href="#opera-omnia" data-work-nav>Dissidia Opera Omnia</a>
+        <a href="#wotv" data-work-nav>War of the Visions</a>
       </nav>
 
       <div class="work-entries">
+      <article class="entry" id="undisclosed-aaa">
+        <div class="entry-body">
+          <h3>Undisclosed AAA Game</h3>
+
+          <p>Currently working on a AAA project. My role is:</p>
+
+          <div class="brief">
+            <ul>
+              <li>Level Designer</li>
+              <li>Level Scripter</li>
+              <li>Combat Designer</li>
+            </ul>
+          </div>
+
+          <p>Achievements so far:</p>
+
+          <div class="brief">
+            <ul>
+              <li>Injected into behind schedule level design tasks to bring them back on-pace
+                <ul>
+                  <li>Took over a task which was 2 weeks delayed due to mistaken focus, bringing it on a correct direction within 3 days
+                    <ul>
+                      <li>Did quick 1-day iterations and worked with client to iron out desired direction</li>
+                      <li>Once direction was set, brought level to alpha state within 1.5 weeks</li>
+                    </ul>
+                  </li>
+                  <li>Brought task to completion within 1 day, originally scoped for 1 week, but unstarted due to medical absences
+                    <ul>
+                      <li>Worked with 2 other designers, splitting off levels into different prefabs so we could each work on one area</li>
+                      <li>Included clear temp markers so work did not overlap</li>
+                      <li>Picked up level scripting to maintain playability with layout revamp</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Mentorship and upskilling
+                <ul>
+                  <li>Mentored junior on level layout tasks</li>
+                  <li>Upskilled level design team on scripting tasks
+                    <ul>
+                      <li>Wrote scripting guide document, tutorializing the game's proprietary language</li>
+                      <li>Guided other senior and intermediate designers on scripting work</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" id="lotf2">
+        <div class="entry-body">
+          <h3>Lords of the Fallen 2</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/0mQSqfMlw2k" title="Lords of the Fallen 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Working with CI Games in Unreal Engine, to create enemies for Lords of the Fallen 2.</p>
+
+          <div class="entry-sub">
+            <h4>Enemy attack design and prototyping</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/LOTF_Attacks.png" alt="Alpha gameplay screenshot of Lords of the Fallen 2: the player character mid-combat against a winged enemy in a gothic cathedral setting, with an attack VFX flashing at the moment of impact." loading="lazy" />
+              </button>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Designed and prototyped attacks for 3 enemies, including 1 mini-boss
+                  <ul>
+                    <li>Retargeted existing animations, mixing animations or layering to achieve the desired result</li>
+                    <li>Used existing VFX and modified them to fit new projectiles/AOEs</li>
+                  </ul>
+                </li>
+                <li>Worked with animators, prioritizing more unique animation work first, while using placeholders for other attacks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Enemy behavior trees</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_BehaviorTrees.png" alt="Unreal Engine behavior tree graph for an enemy: a root and selector nodes branching into Enemy Initialization, Blocks/Parries, Priority Actions, an Attacks group with tag-cooldown-gated dash and quick attacks, and a Reposition node." loading="lazy" />
+              </button>
+              <figcaption>Behavior tree sample</figcaption>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Set up behavior trees for new enemies
+                  <ul>
+                    <li>Outlined attack, pacing, block/evade, and reposition behavior</li>
+                    <li>Set up special interactions (i.e. taunts on player death)</li>
+                  </ul>
+                </li>
+                <li>Implemented EQS and custom Behavior Tree Tasks to customize enemy behaviors</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Custom Blueprint behaviors</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_BP.png" alt="Unreal Engine Blueprint graph: Make Transform and Get Owning Hero Character feeding into a SpawnActor node for BP Fire Projectile, with the result set to a Projectile variable." loading="lazy" />
+              </button>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Worked in Blueprints to build out behaviors not handled by the existing system
+                  <ul>
+                    <li>Attacks that need pathfinding</li>
+                    <li>Weapon throws needing to switch out a held weapon with a projectile</li>
+                    <li>Other special abilities</li>
+                  </ul>
+                </li>
+                <li>Built custom nodes for VFX to hook up the start/loop/end of VFX</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Animation tweaking/prototyping</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Unreal_AnimationSequence.png" alt="Unreal Engine animation montage editor previewing a reload animation on a mannequin character, with a Load/Drop/Lock segment timeline and Animation Segment details panel showing start time, end time, play rate, and loop count." loading="lazy" />
+              </button>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Adjusted poses to improve readability of attacks</li>
+                <li>Tweaked weapon animations, especially for large weapons which could hide the enemy's silhouette</li>
+                <li>Set up attack tracking, hit frames, and parry frames
+                  <ul>
+                    <li>Set frame times for windup, anticipation, read, hit, follow, stay, and recovery</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" id="parallel">
+        <div class="entry-body">
+          <h3>Parallel</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/6ibGQYGYaIw" title="Parallel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Working with Parallel on their digital card game of the same name, the cards were created by the client, while the digital implementation was handled entirely within Electric Square. This was a collaborative process working with the client to iron out card verbiage and rules.</p>
+
+          <div class="entry-sub">
+            <h4>Card and deck UX</h4>
+            <p class="brief-context">Managed all card-related UX, from initial mock-up to implementation, and further iteration.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Parallel_DeckBuilder_Mockup.png" alt="Wireframe mock-up of the deck builder: placeholder deck name and card count, a faction header, deck-composition stats, a cost curve, and a grid of placeholder cards labeled Card Name Here." loading="lazy" />
+                </button>
+                <figcaption>Wireframe mock-up.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Parallel_DeckBuilder_Actual.png" alt="Shipped deck builder for Parallel: the Augencore Starter Deck under the Juggernaut Workshop faction, with real unit, upgrade, and effect cards, deck-composition stats, and a cost curve." loading="lazy" />
+                </button>
+                <figcaption>Shipped in-game implementation.</figcaption>
+              </figure>
+            </div>
+
+            <div class="brief">
+              <ul>
+                <li>Deck builder UX
+                  <ul>
+                    <li>UX mock-up for the deck builder</li>
+                    <li>Control scheme specifications (inspecting/adding/removing/scrolling)</li>
+                  </ul>
+                </li>
+                <li>Card UX
+                  <ul>
+                    <li>Card play/targeting UX for every card mechanic</li>
+                    <li>Card play flow</li>
+                    <li>Card VFX and VFX order</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Card rules and implementation management</h4>
+            <p class="brief-context">Owner for all things cards on the implementation end; the largest role for this is identifying the programming and art work required, and ensuring redundant work is not requested.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Parallel_CardManagement.png" alt="A card database spreadsheet next to a live in-game card preview: columns for id, card name, description, flavor text, rarity, faction, type, subtype, attack, health, cost, release pack, and tutorial-card flag, with the H.A.D.E.S. War Mech unit card rendered from its row's data." loading="lazy" />
+              </button>
+              <figcaption>Card data spreadsheet driving the in-game card implementation.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Broke down the rulesets of cards designed in analog
+                  <ul>
+                    <li>Identified unique mechanics needing implementation (deal X damage, deal X damage Y times, deal X damage to random enemy, clone target enemy, etc.)</li>
+                    <li>Flagged issues with existing cards
+                      <ul>
+                        <li>Problematic mechanics (infinite loops, exploits, etc.)</li>
+                        <li>Unclear rules/inconsistent phrasing (i.e. using different vocab for the same intended action)</li>
+                        <li>Major UX issues not identified in analog</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>Spearheaded documentation fixes to the card VFX list, working with the VFX artist to fill in use cases and card examples for each VFX</li>
+                <li>Created and maintained a card versioning document to support the QA workflow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" id="paper-heroes">
+        <div class="entry-body">
+          <h3>Paper Heroes</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/VlxWkFnVvdY" title="Paper Heroes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Building a mobile gacha game from the ground up. This gave the opportunity to work a lot on creating new features, and developing workflows.</p>
+
+          <div class="entry-sub">
+            <h4>Feature development</h4>
+            <p class="brief-context">Sample design documentation, briefly showing top-level summary of the spec and requirements</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Paper_Heroes_FeatureDevelopment.png" alt="Design document for the tower feature: an in-game screenshot of the tower climb with numbered skirmish floors, next to theming notes, general tower UX (flag states, featured enemy, rewards), a data-driven sky-to-space background transition spec, and platform tiers (Boss Floor every 50 floors, Hard Floor every 10, Normal Floor)." loading="lazy" />
+              </button>
+              <figcaption>Theming, tower UX, background transitions, and platform tiers.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Worked on development of several game features (4 game modes, 2 economy features)</li>
+                <li>Specified requirements from different departments
+                  <ul>
+                    <li>Art requirements, highlighting any aspects which require animation</li>
+                    <li>Programming requirements, specifying which parts are to be set in data, and what loc-keys/data-ids to use</li>
+                  </ul>
+                </li>
+                <li>Data structure setup and data export setup</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Workflow tools for prototyping</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Paper_Heroes_Workflow.png" alt="A Gauntlet-floor screenshot with a branching hex-tile path, next to a spreadsheet map-generation tool: a lettered/numbered grid of tile codes (Enc_N, Enc_H, Enc_Boss, Med_Heal, Med_Rev, Recruit, Start) with a Generate Map Data button and a legend defining each tile element." loading="lazy" />
+              </button>
+              <figcaption>Spreadsheet map generator for the Gauntlet mode's floor layouts.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>With development and iteration, speed is crucial, and when programming resources are limited, some workarounds are needed</li>
+                <li>Lacking a visual editor for map creation, developed a map editor in Excel that would allow designers to make their own maps
+                  <ul>
+                    <li>Included an export tool that would read the map data and put it into output data for programmers</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>A/B testing</h4>
+            <p class="brief-context">Using A/B tests was important for trying to guide the direction of the game, especially with conflicting opinions; data would ground out decisions.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Firebase_AB_Testing.png" alt="Firebase architecture diagram: a backend API application connected to Firebase's real-time database, which reaches a frontend web app and an Android mobile app via real-time DB sync and Firebase Cloud Messaging (FCM)." loading="lazy" />
+              </button>
+              <figcaption>Firebase data flow supporting the game's A/B tests.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <ul>
+                <li>Established separate Excel files for the A/B test</li>
+                <li>Worked with programmers on ironing out requirements, what data to target, and the remote config to use</li>
+                <li>Set up A/B testing using Firebase
+                  <ul>
+                    <li>Set remote config, percent of user base</li>
+                    <li>Ran test and confirmed that players were being served different versions</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" id="opera-omnia">
+        <div class="entry-body">
+          <h3>Dissidia Final Fantasy Opera Omnia</h3>
+
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/85GI-rnBESU" title="Dissidia Final Fantasy Opera Omnia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <p>Working on a Live Ops title, usual responsibilities include maintaining regular content updates, running staging checks.</p>
+          <p>Looking to improve the processes, I went into optimization and automation, cutting out unnecessary steps and using tools to cut manual entry.</p>
+
+          <div class="entry-sub">
+            <h4>Settings menu rework</h4>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/OperaOmnia_SettingsMenu.png" alt="Original settings menu: two side-by-side panels showing Energy Saving Settings and Push Notifications on the left, and Sound volume sliders on the right, all visible at once." loading="lazy" />
+                </button>
+                <figcaption>Original settings menu.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/OperaOmnia_SettingsMenu_ReworkMockup.png" alt="Rework mock-up of the settings menu: a single panel with left-hand category tabs for Game, Sound, and Privacy, the Sound tab open showing volume sliders and a Restore Defaults button." loading="lazy" />
+                </button>
+                <figcaption>Rework mock-up.</figcaption>
+              </figure>
+            </div>
+
+            <div class="brief">
+              <ul>
+                <li>Settings menu was designed in a non-scalable way, and a rework was needed for new features</li>
+                <li>Proposed rework of settings menu screen to accommodate for future options added</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Colorblind mode</h4>
+            <p class="brief-context">Colorblind research and proposal following a QOL suggestion by the Design Lead</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/OperaOmnia_Colorblind_Mode.png" alt="A 2x2 comparison of the Gear/Abilities screen: rows for a blue-blind (tritanopia) simulation and full color, columns for the Normal palette and the Colorblind Mode palette, showing the panel and icon color shifts made for accessibility." loading="lazy" />
+              </button>
+              <figcaption>Normal vs. Colorblind Mode, under full color and a tritanopia simulation.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Goals</p>
+                <ul>
+                  <li>Create a QOL feature which makes the game more accessible for colorblind users</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Results</p>
+                <ul>
+                  <li>Used Photoshop filters to visualize what a colorblind user might see
+                    <ul>
+                      <li>From there, identified issues with the game UI
+                        <ul>
+                          <li>The game uses a lot of blues and bluish-greens, which meant a lot of those accents were lost on blue-blind individuals, and screens might all just blend together</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Made correction samples for different types of colorblindness</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Co-op matchmaking QOL</h4>
+            <p class="brief-context">Self-initiative on the topic of QOL improvements, this was something felt by many colleagues playing the game, and also popped up on Reddit occasionally.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Co-op_Options.png" alt="Original co-op quest-start prompt: 'Embark upon mission as:' with two choices, Host and Guest." loading="lazy" />
+                </button>
+                <figcaption>Original: Host or Guest only.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Co-op_Options_Rework.png" alt="Rework of the co-op quest-start prompt, adding a third Either option, with a help tooltip explaining that tapping Either joins as a guest if slots are open, or starts the quest as host if not." loading="lazy" />
+                </button>
+                <figcaption>Rework: added Either, with an explanatory tooltip.</figcaption>
+              </figure>
+            </div>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Goals</p>
+                <ul>
+                  <li>In every event, there are missions requiring players to clear a number of co-op events
+                    <ul>
+                      <li>By user anecdotes, also drawn out in data, there is an imbalance between the number of people hosting and people joining</li>
+                    </ul>
+                  </li>
+                  <li>Create a new matching option, which allows players to queue as either, making matching faster</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Results</p>
+                <ul>
+                  <li>Working within engineering limitations, made a flow in which players will queue as guests, then after some time of being unable to find a lobby, transition to hosting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Data setup automation</h4>
+            <p class="brief-context">The character event data setup tool referenced above: an Excel/VBA sheet that takes an event ID, its start and end times, the character name, and a reference event to pull global rewards from, then generates the event data in one click.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/OperaOmnia_Data_Setup_Automation.png" alt="Character Event Data Setup Tool spreadsheet: input fields for Event ID, Start Date Time, End Date Time, Character Name, and Reference Event (Global Rewards), with a Generate Data button." loading="lazy" />
+              </button>
+              <figcaption>The data setup tool's input sheet and Generate Data action.</figcaption>
+            </figure>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Goals</p>
+                <ul>
+                  <li>Data was still manually handled within the team, which was both time-consuming and error-prone
+                    <ul>
+                      <li>The tool was meant to significantly reduce data setup time, allowing more time to focus on new content</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Results</p>
+                <ul>
+                  <li>Tool significantly cut down data setup time, taking a 3-day task down to 0.5 day including manual in-game checks</li>
+                  <li>Expanded tool out to all regularly run events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
       <article class="entry" id="wotv">
         <div class="entry-body">
           <h3>War of the Visions: Final Fantasy Brave Exvius</h3>
@@ -268,439 +753,287 @@
           </div>
         </div>
       </article>
+      </div>
+    </div>
+  </section>
 
-      <article class="entry" id="opera-omnia">
+  <section class="student-work" id="student-work">
+    <div class="work-banner-band">
+      <div class="section-inner">
+        <h2 class="work-banner">Student work</h2>
+      </div>
+    </div>
+
+    <div class="work-layout">
+      <nav class="work-nav" aria-label="Jump to a student project">
+        <a href="#rift-in-time" data-student-nav>A Rift in Time</a>
+        <a href="#kinoko" data-student-nav>Kinoko</a>
+        <a href="#past-light" data-student-nav>Past Light</a>
+      </nav>
+
+      <div class="work-entries">
+      <article class="entry" id="rift-in-time">
         <div class="entry-body">
-          <h3>Dissidia Final Fantasy Opera Omnia</h3>
+          <h3>A Rift in Time</h3>
+          <p class="brief-context">Design Lead for year 3 student project, built on a student developed engine, with an 11-man team</p>
 
           <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/85GI-rnBESU" title="Dissidia Final Fantasy Opera Omnia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/eBRexscSRI8" title="A Rift in Time" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
 
-          <p>Working on a Live Ops title, usual responsibilities include maintaining regular content updates, running staging checks.</p>
-          <p>Looking to improve the processes, I went into optimization and automation, cutting out unnecessary steps and using tools to cut manual entry.</p>
-
           <div class="entry-sub">
-            <h4>Settings menu rework</h4>
+            <h4>Early development</h4>
+            <p>Working in an engine that was being built from the ground up, we had to adapt to deliver results quickly even with technical limitations.</p>
 
             <div class="entry-compare">
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/OperaOmnia_SettingsMenu.png" alt="Original settings menu: two side-by-side panels showing Energy Saving Settings and Push Notifications on the left, and Sound volume sliders on the right, all visible at once." loading="lazy" />
+                  <img src="assets/Rift_Level_XML.JPG" alt="An XML file listing level entities exported for the student engine: entity names, prefab names, position, rotation, and scale values, including a wire group with child wire segments." loading="lazy" />
                 </button>
-                <figcaption>Original settings menu.</figcaption>
+                <figcaption>Exported level data in XML.</figcaption>
               </figure>
 
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/OperaOmnia_SettingsMenu_ReworkMockup.png" alt="Rework mock-up of the settings menu: a single panel with left-hand category tabs for Game, Sound, and Privacy, the Sound tab open showing volume sliders and a Restore Defaults button." loading="lazy" />
+                  <img src="assets/Rift_XML_generated_level.JPG" alt="The level scene generated in the student engine's viewport from the XML data, shown with green wireframe overlays and a transform gizmo." loading="lazy" />
                 </button>
-                <figcaption>Rework mock-up.</figcaption>
+                <figcaption>Level generated in the student engine from that XML.</figcaption>
               </figure>
             </div>
 
-            <div class="brief">
-              <ul>
-                <li>Settings menu was designed in a non-scalable way, and a rework was needed for new features</li>
-                <li>Proposed rework of settings menu screen to accommodate for future options added</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="entry-sub">
-            <h4>Colorblind mode</h4>
-            <p class="brief-context">Colorblind research and proposal following a QOL suggestion by the Design Lead</p>
+            <p>Worked with programmers to create an XML to level tool, so we could immediately translate our Unity work into the student engine.</p>
 
             <figure class="entry-figure">
               <button type="button" class="img-zoom">
-                <img src="assets/OperaOmnia_Colorblind_Mode.png" alt="A 2x2 comparison of the Gear/Abilities screen: rows for a blue-blind (tritanopia) simulation and full color, columns for the Normal palette and the Colorblind Mode palette, showing the panel and icon color shifts made for accessibility." loading="lazy" />
+                <img src="assets/Rift_ScriptedAnimSystem.JPG" alt="A custom TempAnimator inspector tool in the student engine: keyframe elements with timestamp, position, and euler rotation fields, previewed on a character in the editor viewport with animation curve gizmos." loading="lazy" />
               </button>
-              <figcaption>Normal vs. Colorblind Mode, under full color and a tritanopia simulation.</figcaption>
             </figure>
 
-            <div class="brief">
-              <div class="brief-group">
-                <p class="brief-label">Goals</p>
-                <ul>
-                  <li>Create a QOL feature which makes the game more accessible for colorblind users</li>
-                </ul>
-              </div>
-
-              <div class="brief-group">
-                <p class="brief-label">Results</p>
-                <ul>
-                  <li>Used Photoshop filters to visualize what a colorblind user might see
-                    <ul>
-                      <li>From there, identified issues with the game UI
-                        <ul>
-                          <li>The game uses a lot of blues and bluish-greens, which meant a lot of those accents were lost on blue-blind individuals, and screens might all just blend together</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>Made correction samples for different types of colorblindness</li>
-                </ul>
-              </div>
-            </div>
+            <p>Scripted animation system using lerps as a temp solution while the animation system was being built.</p>
           </div>
 
           <div class="entry-sub">
-            <h4>Co-op matchmaking QOL</h4>
-            <p class="brief-context">Self-initiative on the topic of QOL improvements, this was something felt by many colleagues playing the game, and also popped up on Reddit occasionally.</p>
+            <h4>Level reworks</h4>
 
             <div class="entry-compare">
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/Co-op_Options.png" alt="Original co-op quest-start prompt: 'Embark upon mission as:' with two choices, Host and Guest." loading="lazy" />
+                  <img src="assets/Rift_LevelRevamp_Before.png" alt="Before the level rework: a small, brightly lit sci-fi lab room with lockers, a workbench, a blaster prop, and a Lab Safety Rules Poster Project pinned to the wall." loading="lazy" />
                 </button>
-                <figcaption>Original: Host or Guest only.</figcaption>
+                <figcaption>Before.</figcaption>
               </figure>
 
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/Co-op_Options_Rework.png" alt="Rework of the co-op quest-start prompt, adding a third Either option, with a help tooltip explaining that tapping Either joins as a guest if slots are open, or starts the quest as host if not." loading="lazy" />
+                  <img src="assets/Rift_LevelRevamp_After.png" alt="After the level rework: a larger, moodier sci-fi corridor with pink and purple neon lighting, glass-walled rooms, glowing floor panels, and a shooting-range target visible through a window." loading="lazy" />
                 </button>
-                <figcaption>Rework: added Either, with an explanatory tooltip.</figcaption>
+                <figcaption>After.</figcaption>
               </figure>
             </div>
 
-            <div class="brief">
-              <div class="brief-group">
-                <p class="brief-label">Goals</p>
-                <ul>
-                  <li>In every event, there are missions requiring players to clear a number of co-op events
-                    <ul>
-                      <li>By user anecdotes, also drawn out in data, there is an imbalance between the number of people hosting and people joining</li>
-                    </ul>
-                  </li>
-                  <li>Create a new matching option, which allows players to queue as either, making matching faster</li>
-                </ul>
-              </div>
-
-              <div class="brief-group">
-                <p class="brief-label">Results</p>
-                <ul>
-                  <li>Working within engineering limitations, made a flow in which players will queue as guests, then after some time of being unable to find a lobby, transition to hosting</li>
-                </ul>
-              </div>
-            </div>
+            <p>Worked with level designer to rework existing spaces to create clear identity and verticality.</p>
           </div>
 
           <div class="entry-sub">
-            <h4>Data setup automation</h4>
-            <p class="brief-context">The character event data setup tool referenced above: an Excel/VBA sheet that takes an event ID, its start and end times, the character name, and a reference event to pull global rewards from, then generates the event data in one click.</p>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/OperaOmnia_Data_Setup_Automation.png" alt="Character Event Data Setup Tool spreadsheet: input fields for Event ID, Start Date Time, End Date Time, Character Name, and Reference Event (Global Rewards), with a Generate Data button." loading="lazy" />
-              </button>
-              <figcaption>The data setup tool's input sheet and Generate Data action.</figcaption>
-            </figure>
-
-            <div class="brief">
-              <div class="brief-group">
-                <p class="brief-label">Goals</p>
-                <ul>
-                  <li>Data was still manually handled within the team, which was both time-consuming and error-prone
-                    <ul>
-                      <li>The tool was meant to significantly reduce data setup time, allowing more time to focus on new content</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="brief-group">
-                <p class="brief-label">Results</p>
-                <ul>
-                  <li>Tool significantly cut down data setup time, taking a 3-day task down to 0.5 day including manual in-game checks</li>
-                  <li>Expanded tool out to all regularly run events</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="entry" id="paper-heroes">
-        <div class="entry-body">
-          <h3>Paper Heroes</h3>
-
-          <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/VlxWkFnVvdY" title="Paper Heroes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-          <p>Building a mobile gacha game from the ground up. This gave the opportunity to work a lot on creating new features, and developing workflows.</p>
-
-          <div class="entry-sub">
-            <h4>Feature development</h4>
-            <p class="brief-context">Sample design documentation, briefly showing top-level summary of the spec and requirements</p>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/Paper_Heroes_FeatureDevelopment.png" alt="Design document for the tower feature: an in-game screenshot of the tower climb with numbered skirmish floors, next to theming notes, general tower UX (flag states, featured enemy, rewards), a data-driven sky-to-space background transition spec, and platform tiers (Boss Floor every 50 floors, Hard Floor every 10, Normal Floor)." loading="lazy" />
-              </button>
-              <figcaption>Theming, tower UX, background transitions, and platform tiers.</figcaption>
-            </figure>
-
-            <div class="brief">
-              <ul>
-                <li>Worked on development of several game features (4 game modes, 2 economy features)</li>
-                <li>Specified requirements from different departments
-                  <ul>
-                    <li>Art requirements, highlighting any aspects which require animation</li>
-                    <li>Programming requirements, specifying which parts are to be set in data, and what loc-keys/data-ids to use</li>
-                  </ul>
-                </li>
-                <li>Data structure setup and data export setup</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="entry-sub">
-            <h4>Workflow tools for prototyping</h4>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/Paper_Heroes_Workflow.png" alt="A Gauntlet-floor screenshot with a branching hex-tile path, next to a spreadsheet map-generation tool: a lettered/numbered grid of tile codes (Enc_N, Enc_H, Enc_Boss, Med_Heal, Med_Rev, Recruit, Start) with a Generate Map Data button and a legend defining each tile element." loading="lazy" />
-              </button>
-              <figcaption>Spreadsheet map generator for the Gauntlet mode's floor layouts.</figcaption>
-            </figure>
-
-            <div class="brief">
-              <ul>
-                <li>With development and iteration, speed is crucial, and when programming resources are limited, some workarounds are needed</li>
-                <li>Lacking a visual editor for map creation, developed a map editor in Excel that would allow designers to make their own maps
-                  <ul>
-                    <li>Included an export tool that would read the map data and put it into output data for programmers</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="entry-sub">
-            <h4>A/B testing</h4>
-            <p class="brief-context">Using A/B tests was important for trying to guide the direction of the game, especially with conflicting opinions; data would ground out decisions.</p>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/Firebase_AB_Testing.png" alt="Firebase architecture diagram: a backend API application connected to Firebase's real-time database, which reaches a frontend web app and an Android mobile app via real-time DB sync and Firebase Cloud Messaging (FCM)." loading="lazy" />
-              </button>
-              <figcaption>Firebase data flow supporting the game's A/B tests.</figcaption>
-            </figure>
-
-            <div class="brief">
-              <ul>
-                <li>Established separate Excel files for the A/B test</li>
-                <li>Worked with programmers on ironing out requirements, what data to target, and the remote config to use</li>
-                <li>Set up A/B testing using Firebase
-                  <ul>
-                    <li>Set remote config, percent of user base</li>
-                    <li>Ran test and confirmed that players were being served different versions</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="entry" id="parallel">
-        <div class="entry-body">
-          <h3>Parallel</h3>
-
-          <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/6ibGQYGYaIw" title="Parallel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-          <p>Working with Parallel on their digital card game of the same name, the cards were created by the client, while the digital implementation was handled entirely within Electric Square. This was a collaborative process working with the client to iron out card verbiage and rules.</p>
-
-          <div class="entry-sub">
-            <h4>Card and deck UX</h4>
-            <p class="brief-context">Managed all card-related UX, from initial mock-up to implementation, and further iteration.</p>
+            <h4>[C#] Cinematic system</h4>
 
             <div class="entry-compare">
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/Parallel_DeckBuilder_Mockup.png" alt="Wireframe mock-up of the deck builder: placeholder deck name and card count, a faction header, deck-composition stats, a cost curve, and a grid of placeholder cards labeled Card Name Here." loading="lazy" />
+                  <img src="assets/Rift_CinematicSystem_Hierarchy.JPG" alt="Game object hierarchy for a cinematic: StartCinematic containing an ordered Sequence of steps such as PlayDialogue, Wait 2.2 Seconds, Scale In Lazy, FadeOutSeq, MovePeopleIn, MoveCameraOut, WhiteOut, DeactiveCamera, FadeIn, and FadeOut." loading="lazy" />
                 </button>
-                <figcaption>Wireframe mock-up.</figcaption>
+                <figcaption>Cinematic steps ordered in the hierarchy.</figcaption>
               </figure>
 
               <figure class="entry-figure">
                 <button type="button" class="img-zoom">
-                  <img src="assets/Parallel_DeckBuilder_Actual.png" alt="Shipped deck builder for Parallel: the Augencore Starter Deck under the Juggernaut Workshop faction, with real unit, upgrade, and effect cards, deck-composition stats, and a cost curve." loading="lazy" />
+                  <img src="assets/Rift_CinematicSystem_Inspector.JPG" alt="Inspector view of a MoveCameraOut object with a custom Seq_MoveToLocation component: moveType, transformToMove, start and end point transforms, moveTime, and smoothFactor fields." loading="lazy" />
                 </button>
-                <figcaption>Shipped in-game implementation.</figcaption>
+                <figcaption>A modular move behavior component.</figcaption>
               </figure>
             </div>
 
-            <div class="brief">
-              <ul>
-                <li>Deck builder UX
-                  <ul>
-                    <li>UX mock-up for the deck builder</li>
-                    <li>Control scheme specifications (inspecting/adding/removing/scrolling)</li>
-                  </ul>
-                </li>
-                <li>Card UX
-                  <ul>
-                    <li>Card play/targeting UX for every card mechanic</li>
-                    <li>Card play flow</li>
-                    <li>Card VFX and VFX order</li>
-                  </ul>
-                </li>
-              </ul>
+            <p>Create a scripted cinematics system that ran based on order in game hierarchy. Modular behaviors like waits and movements are also scripted in C#</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Rift_AnimationCurve.JPG" alt="A plotted easing curve equation, (-0.6x - x) / (2 * -0.6x + 0.6 - 1) from 0 to 1, rising steeply then leveling off toward 1." loading="lazy" />
+                </button>
+                <figcaption>Curve equation used for camera smoothing.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Rift_CurveSmoothing.gif" alt="Animated demo in the engine's test window: the camera smoothly moves down a purple-lit corridor toward the A Rift in Time main menu, alongside the editor's track/asset panels." loading="lazy" />
+                </button>
+                <figcaption>Smoothed camera movement in action.</figcaption>
+              </figure>
             </div>
-          </div>
 
-          <div class="entry-sub">
-            <h4>Card rules and implementation management</h4>
-            <p class="brief-context">Owner for all things cards on the implementation end; the largest role for this is identifying the programming and art work required, and ensuring redundant work is not requested.</p>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/Parallel_CardManagement.png" alt="A card database spreadsheet next to a live in-game card preview: columns for id, card name, description, flavor text, rarity, faction, type, subtype, attack, health, cost, release pack, and tutorial-card flag, with the H.A.D.E.S. War Mech unit card rendered from its row's data." loading="lazy" />
-              </button>
-              <figcaption>Card data spreadsheet driving the in-game card implementation.</figcaption>
-            </figure>
-
-            <div class="brief">
-              <ul>
-                <li>Broke down the rulesets of cards designed in analog
-                  <ul>
-                    <li>Identified unique mechanics needing implementation (deal X damage, deal X damage Y times, deal X damage to random enemy, clone target enemy, etc.)</li>
-                    <li>Flagged issues with existing cards
-                      <ul>
-                        <li>Problematic mechanics (infinite loops, exploits, etc.)</li>
-                        <li>Unclear rules/inconsistent phrasing (i.e. using different vocab for the same intended action)</li>
-                        <li>Major UX issues not identified in analog</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>Spearheaded documentation fixes to the card VFX list, working with the VFX artist to fill in use cases and card examples for each VFX</li>
-                <li>Created and maintained a card versioning document to support the QA workflow</li>
-              </ul>
-            </div>
+            <p>Made use of curve equations to smooth camera movements to create desired cinematic effect.</p>
           </div>
         </div>
       </article>
 
-      <article class="entry" id="lotf2">
+      <article class="entry" id="kinoko">
         <div class="entry-body">
-          <h3>Lords of the Fallen 2</h3>
+          <h3>Kinoko</h3>
+          <p class="brief-context">Sole designer in a team of engineers and a single artist</p>
 
           <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/0mQSqfMlw2k" title="Lords of the Fallen 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-          <p>Working with CI Games in Unreal Engine, to create enemies for Lords of the Fallen 2.</p>
-
-          <div class="entry-sub">
-            <h4>Enemy attack design and prototyping</h4>
-
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/LOTF_Attacks.png" alt="Alpha gameplay screenshot of Lords of the Fallen 2: the player character mid-combat against a winged enemy in a gothic cathedral setting, with an attack VFX flashing at the moment of impact." loading="lazy" />
-              </button>
-            </figure>
-
-            <div class="brief">
-              <ul>
-                <li>Designed and prototyped attacks for 3 enemies, including 1 mini-boss
-                  <ul>
-                    <li>Retargeted existing animations, mixing animations or layering to achieve the desired result</li>
-                    <li>Used existing VFX and modified them to fit new projectiles/AOEs</li>
-                  </ul>
-                </li>
-                <li>Worked with animators, prioritizing more unique animation work first, while using placeholders for other attacks</li>
-              </ul>
-            </div>
+            <iframe src="https://www.youtube.com/embed/jui548hNWWo" title="Kinoko" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
 
           <div class="entry-sub">
-            <h4>Enemy behavior trees</h4>
+            <h4>Unity prototype</h4>
+            <p>Quick 2 week prototype of basic mechanics and platforming behavior before porting to student engine</p>
 
-            <figure class="entry-figure">
-              <button type="button" class="img-zoom">
-                <img src="assets/Unreal_BehaviorTrees.png" alt="Unreal Engine behavior tree graph for an enemy: a root and selector nodes branching into Enemy Initialization, Blocks/Parries, Priority Actions, an Attacks group with tag-cooldown-gated dash and quick attacks, and a Reposition node." loading="lazy" />
-              </button>
-              <figcaption>Behavior tree sample</figcaption>
-            </figure>
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Kinoko_Platforming_Gym.jpg" alt="Unity editor view of a white-blockout platforming test scene, with the mushroom character sprite among simple platform blockouts and red bounds lines marking camera/level limits." loading="lazy" />
+                </button>
+                <figcaption>Blockout platforming gym used to test movement.</figcaption>
+              </figure>
 
-            <div class="brief">
-              <ul>
-                <li>Set up behavior trees for new enemies
-                  <ul>
-                    <li>Outlined attack, pacing, block/evade, and reposition behavior</li>
-                    <li>Set up special interactions (i.e. taunts on player death)</li>
-                  </ul>
-                </li>
-                <li>Implemented EQS and custom Behavior Tree Tasks to customize enemy behaviors</li>
-              </ul>
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Kinoko_Camera.gif" alt="Animated demo of a more polished level with forest background art, showing the camera following the mushroom character through the scene." loading="lazy" />
+                </button>
+                <figcaption>Set camera bounds, Y movement thresholds, and grounded behavior.</figcaption>
+              </figure>
             </div>
+
+            <p>Prototype movement and camera for main character</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Kinoko_Mechanics.jpg" alt="Unity editor view of Level_3: two mushroom characters, a boulder hazard object, platform tiles, and hierarchy objects including BrokenBranch1-Base, PlayZone, and Bounds." loading="lazy" />
+                </button>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/Kinoko_ScreenShot_1.png" alt="Polished in-game screenshot: the mushroom player character beside a lever, a boulder balanced on a stone pillar, and a purple hooded eye-enemy nearby, with mushrooms and a flower decorating the platforms." loading="lazy" />
+                </button>
+              </figure>
+            </div>
+
+            <p>Prototype the various mechanics to be used in the game.</p>
           </div>
 
           <div class="entry-sub">
-            <h4>Custom Blueprint behaviors</h4>
+            <h4>Level design work</h4>
 
             <figure class="entry-figure">
               <button type="button" class="img-zoom">
-                <img src="assets/Unreal_BP.png" alt="Unreal Engine Blueprint graph: Make Transform and Get Owning Hero Character feeding into a SpawnActor node for BP Fire Projectile, with the result set to a Projectile variable." loading="lazy" />
+                <img src="assets/Kinoko_PaperPrototype.jpg" alt="Hand-drawn paper level design sketch: a platform layout with measured gaps and heights, a mushroom character, a hazard, and a wall jump, dimensioned in grid units." loading="lazy" />
               </button>
             </figure>
 
-            <div class="brief">
-              <ul>
-                <li>Worked in Blueprints to build out behaviors not handled by the existing system
-                  <ul>
-                    <li>Attacks that need pathfinding</li>
-                    <li>Weapon throws needing to switch out a held weapon with a projectile</li>
-                    <li>Other special abilities</li>
-                  </ul>
-                </li>
-                <li>Built custom nodes for VFX to hook up the start/loop/end of VFX</li>
-              </ul>
-            </div>
+            <p>Paper prototyping levels and puzzles for Kinoko</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/Kinoko_Tiled.JPG" alt="Level layout for Puzzle3 built in the Tiled map editor, with rock platform tiles arranged across four layers." loading="lazy" />
+              </button>
+            </figure>
+
+            <p>Build levels using Tiled</p>
           </div>
 
           <div class="entry-sub">
-            <h4>Animation tweaking/prototyping</h4>
+            <h4>Lua scripting</h4>
 
             <figure class="entry-figure">
               <button type="button" class="img-zoom">
-                <img src="assets/Unreal_AnimationSequence.png" alt="Unreal Engine animation montage editor previewing a reload animation on a mannequin character, with a Load/Drop/Lock segment timeline and Animation Segment details panel showing start time, end time, play rate, and loop count." loading="lazy" />
+                <img src="assets/Kinoko_Lua.jpg" alt="Lua scripts in the student engine: SaveManager with typed save/load functions, and MovingPlatform with Init/Start/Update lifecycle functions, a patrol coroutine between waypoints, and collision handlers that carry the player with the platform." loading="lazy" />
               </button>
             </figure>
 
-            <div class="brief">
-              <ul>
-                <li>Adjusted poses to improve readability of attacks</li>
-                <li>Tweaked weapon animations, especially for large weapons which could hide the enemy's silhouette</li>
-                <li>Set up attack tracking, hit frames, and parry frames
-                  <ul>
-                    <li>Set frame times for windup, anticipation, read, hit, follow, stay, and recovery</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+            <p>Implemented mechanics and player controls in our custom made engine using Lua.</p>
           </div>
         </div>
       </article>
 
-      <article class="entry" id="undisclosed-aaa">
+      <article class="entry" id="past-light">
         <div class="entry-body">
-          <h3>Undisclosed AAA Game</h3>
+          <h3>Past Light</h3>
+          <p class="brief-context">A horror adventure, made by a designer only team in Unity.</p>
 
-          <p>Currently working on a AAA project. My role is:</p>
+          <div class="entry-compare">
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/PastLight_SS_1.png" alt="A silhouetted character running past a shadowy figure near a door marked 'Lobby', with an inventory bag icon and a red diary item shown in the corner." loading="lazy" />
+              </button>
+            </figure>
 
-          <div class="brief">
-            <ul>
-              <li>Level Designer</li>
-              <li>Level Scripter</li>
-              <li>Combat Designer</li>
-            </ul>
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/PastLight_SS_2.jpg" alt="An in-game diary page titled 'Suspected People', with a suspect's photo, handwritten notes about the sister's supervisor, and a circled number '1169', captioned 'Her boss seems suspicious.'" loading="lazy" />
+              </button>
+            </figure>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Project management</h4>
+
+            <div class="entry-compare entry-compare-3">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/PastLight_WBS.PNG" alt="Work breakdown structure for Past Light: the project split into Exploration/Interaction, Ghost Behaviour, and Event System branches, each broken down into further sub-tasks." loading="lazy" />
+                </button>
+                <figcaption>Work breakdown structure.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/PastLight_Weekly_Tasks.jpg" alt="A weekly milestone tracking spreadsheet with tasks grouped by discipline (AI, Art, Animation, Design), each with an owner, due date, and color-coded status such as In Progress, Done, or Overdue." loading="lazy" />
+                </button>
+                <figcaption>Weekly milestone task tracking.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/PastLight_MilestoneReport.PNG" alt="A milestone completion report breaking the project down by feature area (Exploration, Ghost Behaviour, Level Design, Eventing) with color-coded completion status per task." loading="lazy" />
+                </button>
+                <figcaption>Milestone completion report.</figcaption>
+              </figure>
+            </div>
+
+            <p>Managed week to week as well as larger milestone goals for the project.</p>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Custom editor tools</h4>
+
+            <p>Creation of custom tools so designers who are less technically savy can still produce content for the game.</p>
+
+            <div class="entry-compare">
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/ConditionSystem.PNG" alt="Custom Unity inspector for AllConditions: game-state condition flags grouped into categories such as Hospital, Prologue (PrologueEvent, LockedDoor), and StartRoom (NotebookTaken, FirstObservePainting), with add/remove condition and category controls." loading="lazy" />
+                </button>
+                <figcaption>Custom condition-flag editor.</figcaption>
+              </figure>
+
+              <figure class="entry-figure">
+                <button type="button" class="img-zoom">
+                  <img src="assets/PowerSource.PNG" alt="Custom Unity inspector for PowerSourceManager: a list of power sources by area (Hospital, Cinema, MysteryArea) each with an Is Powered checkbox, and a field to add a new power source." loading="lazy" />
+                </button>
+                <figcaption>Custom power-source editor.</figcaption>
+              </figure>
+            </div>
+
+            <p>Setup system of conditions and game state flags which can be controlled entirely through Unity's inspector.</p>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/CustomEditor_Sample.gif" alt="Animated demo of a custom Response Group component in the Unity inspector: a Play Audio response, a Response_SetActive dropdown, and an Add Response button, edited live alongside a hospital-scene prop." loading="lazy" />
+              </button>
+            </figure>
           </div>
         </div>
       </article>
