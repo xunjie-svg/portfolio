@@ -1,9 +1,10 @@
 // Tan Xun Jie — portfolio
-// Small, functional enhancements only: active-section nav highlighting and the image lightbox.
+// Small, functional enhancements only: active-section nav highlighting (site nav and the
+// work section's project jump-nav) and the image lightbox.
 // No frameworks, no build step.
 
-(function () {
-  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[data-nav]'));
+function initSectionNav(linkSelector) {
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(linkSelector));
   var sections = navLinks
     .map(function (link) {
       var id = link.getAttribute('href').slice(1);
@@ -11,34 +12,37 @@
     })
     .filter(Boolean);
 
-  if ('IntersectionObserver' in window && sections.length) {
-    var setCurrent = function (id) {
-      navLinks.forEach(function (link) {
-        var isCurrent = link.getAttribute('href') === '#' + id;
-        if (isCurrent) {
-          link.setAttribute('data-current', 'true');
-          link.setAttribute('aria-current', 'true');
-        } else {
-          link.removeAttribute('data-current');
-          link.removeAttribute('aria-current');
+  if (!('IntersectionObserver' in window) || !sections.length) return;
+
+  var setCurrent = function (id) {
+    navLinks.forEach(function (link) {
+      var isCurrent = link.getAttribute('href') === '#' + id;
+      if (isCurrent) {
+        link.setAttribute('data-current', 'true');
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('data-current');
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          setCurrent(entry.target.id);
         }
       });
-    };
+    },
+    { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+  );
 
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            setCurrent(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
-    );
+  sections.forEach(function (section) { observer.observe(section); });
+}
 
-    sections.forEach(function (section) { observer.observe(section); });
-  }
-})();
+initSectionNav('.nav a[data-nav]');
+initSectionNav('.work-nav a[data-work-nav]');
 
 (function () {
   var lightbox = document.getElementById('lightbox');
