@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Tan Xun Jie — Technical Game Designer</title>
+<title>Tan Xun Jie — Senior Gameplay/Systems Designer</title>
 <meta name="description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
 <meta name="theme-color" content="#12151a" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Tan Xun Jie — Technical Game Designer" />
+<meta property="og:title" content="Tan Xun Jie — Senior Gameplay/Systems Designer" />
 <meta property="og:description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
 <meta property="og:site_name" content="Tan Xun Jie" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tan Xun Jie — Technical Game Designer" />
+<meta name="twitter:title" content="Tan Xun Jie — Senior Gameplay/Systems Designer" />
 <meta name="twitter:description" content="Technical game designer working across scripting, VFX, behavior trees, and tools since 2020." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +24,6 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="topbar" id="topbar">
-  <a class="mark" href="#top" aria-label="Back to top">
-    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-      <path d="M4 8 L16 4 L28 8 L16 12 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-      <path d="M16 12 L16 28" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M4 8 L4 22 L16 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-      <path d="M28 8 L28 22 L16 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-    </svg>
-  </a>
-
   <nav class="nav" aria-label="Primary">
     <a href="#about" data-nav>About</a>
 
@@ -69,8 +60,6 @@
 
     <a href="#contact" data-nav>Contact</a>
   </nav>
-
-  <a class="nav-cta" href="mailto:tanxunjie@hotmail.com">Email</a>
 </header>
 
 <main id="main">
@@ -78,7 +67,7 @@
   <section class="hero" id="top">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="hero-kicker">Technical Game Designer</p>
+        <p class="hero-kicker">Senior Gameplay/Systems Designer</p>
         <h1 class="hero-name">Tan Xun Jie</h1>
         <p class="hero-lead">Building games since 2019</p>
         <div class="hero-actions">
@@ -135,9 +124,12 @@
             </ul>
           </div>
 
-          <p>Achievements so far:</p>
+          <div class="entry-sub">
+            <h4>Achievements</h4>
 
           <div class="brief">
+            <div class="brief-group">
+            <p class="brief-label">Working and Leading under pressure</p>
             <ul>
               <li>Injected into behind schedule level design tasks to bring them back on-pace
                 <ul>
@@ -156,18 +148,21 @@
                   </li>
                 </ul>
               </li>
-              <li>Mentorship and upskilling
+            </ul>
+            </div>
+            <div class="brief-group">
+            <p class="brief-label">Mentorship and upskilling</p>
+            <ul>
+              <li>Mentored junior on level layout tasks</li>
+              <li>Upskilled level design team on scripting tasks
                 <ul>
-                  <li>Mentored junior on level layout tasks</li>
-                  <li>Upskilled level design team on scripting tasks
-                    <ul>
-                      <li>Wrote scripting guide document, tutorializing the game's proprietary language</li>
-                      <li>Guided other senior and intermediate designers on scripting work</li>
-                    </ul>
-                  </li>
+                  <li>Wrote scripting guide document, tutorializing the game's proprietary language</li>
+                  <li>Guided other senior and intermediate designers on scripting work</li>
                 </ul>
               </li>
             </ul>
+            </div>
+          </div>
           </div>
         </div>
       </article>
@@ -365,6 +360,63 @@
           </div>
 
           <p>Building a mobile gacha game from the ground up. This gave the opportunity to work a lot on creating new features, and developing workflows.</p>
+
+          <div class="entry-sub">
+            <h4>Economy/Progression balancing</h4>
+
+            <figure class="entry-figure">
+              <button type="button" class="img-zoom">
+                <img src="assets/paper_heroes_economy.png" alt="Master balance sheet spreadsheet tracking progression by day and stage: player level, top hero levels, heroes owned, power, and per-stage reward columns for coins, EXP, hero EXP, gems, and arena, labyrinth, and tower unlocks." loading="lazy" />
+              </button>
+            </figure>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Economy</p>
+                <ul>
+                  <li>Adjusted the rewards from game modes based on master balance sheet
+                    <ul>
+                      <li>Work with economy lead to rework reward distribution to incentivize user engagement with game modes</li>
+                    </ul>
+                  </li>
+                  <li>Encourage habit creation, through reward timing
+                    <ul>
+                      <li>Include early progression wall in FTUE which then flows to mission rewards</li>
+                      <li>Set mission rewards to be critical for progression
+                        <ul>
+                          <li>Desired engagement funnel would be [Stuck on main story] -&gt; [Look in mission for rewards] -&gt; [See experience reward from recently unlocked game mode]</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="brief-group">
+                <p class="brief-label">Progression</p>
+                <ul>
+                  <li>Balancing of main story difficulty
+                    <ul>
+                      <li>Adjusted progression wall timing to drive engagement with secondary game modes
+                        <ul>
+                          <li>Ensure early progression walls coincide with introduction of new reward loops</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Analyze spikes in user drops from data
+                    <ul>
+                      <li>Create hypothesis and test remedies
+                        <ul>
+                          <li>i.e. [User fails level] -&gt; [Levels hero] -&gt; [fails again] would indicate a progression wall</li>
+                          <li>In above example, reasons could be lack of adoption of other reward loops, an issue with clarity of strategy, or level that is genuinely overtuned</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <div class="entry-sub">
             <h4>Feature development</h4>
@@ -1060,7 +1112,7 @@
 <footer class="site-footer">
   <div class="section-inner footer-inner">
     <span>Tan Xun Jie</span>
-    <span>Technical Game Designer</span>
+    <span>Senior Gameplay/Systems Designer</span>
     <a href="#top">Back to top</a>
   </div>
 </footer>

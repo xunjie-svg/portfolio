@@ -1,5 +1,5 @@
 /* ============================================================
-   Tan Xun Jie — Technical Game Designer
+   Tan Xun Jie — Senior Gameplay/Systems Designer
    Token system
 
    Color
@@ -183,6 +183,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   z-index: 50;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: clamp(1rem, 3vw, 2.5rem);
   padding: 0.9rem var(--gutter);
   background: rgba(18, 21, 26, 0.92);
@@ -192,18 +193,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   border-bottom: 1px solid var(--line);
 }
 
-.mark {
-  color: var(--paper);
-  display: inline-flex;
-  flex-shrink: 0;
-}
-.mark:hover { color: var(--signal); }
-
 .nav {
   display: flex;
-  gap: clamp(1rem, 2.5vw, 2rem);
+  gap: clamp(1.5rem, 5vw, 4rem);
   flex-wrap: wrap;
-  margin-right: auto;
   font-size: var(--text-small);
 }
 
@@ -217,17 +210,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: var(--paper);
   border-bottom-color: var(--signal);
 }
-
-.nav-cta {
-  font-family: var(--font-mono);
-  font-size: var(--text-mono);
-  color: var(--ink);
-  background: var(--signal);
-  padding: 0.5rem 0.9rem;
-  border-radius: var(--radius-sm);
-  flex-shrink: 0;
-}
-.nav-cta:hover { background: #f0b656; }
 
 .nav-work {
   position: relative;
@@ -769,8 +751,8 @@ html.lightbox-open { overflow: hidden; }
     row-gap: 0.6rem;
   }
   .nav {
-    justify-content: flex-start;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
   }
   .entry-compare {
     grid-template-columns: 1fr;
