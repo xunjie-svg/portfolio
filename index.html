@@ -4,16 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Tan Xun Jie — Senior Gameplay/Systems Designer</title>
-<meta name="description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
+<meta name="description" content="Tan Xun Jie is a senior gameplay and systems designer building games since 2019. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
 <meta name="theme-color" content="#12151a" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Tan Xun Jie — Senior Gameplay/Systems Designer" />
-<meta property="og:description" content="Tan Xun Jie is a technical game designer working across scripting, VFX, behavior trees, and tools since 2020. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
+<meta property="og:description" content="Tan Xun Jie is a senior gameplay and systems designer building games since 2019. Credits include Lords of the Fallen 2, Dissidia Final Fantasy Opera Omnia, and War of the Visions: Final Fantasy Brave Exvius." />
 <meta property="og:site_name" content="Tan Xun Jie" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Tan Xun Jie — Senior Gameplay/Systems Designer" />
-<meta name="twitter:description" content="Technical game designer working across scripting, VFX, behavior trees, and tools since 2020." />
+<meta name="twitter:description" content="Senior gameplay and systems designer building games since 2019." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -280,6 +280,106 @@
           <p>Working with Parallel on their digital card game of the same name, the cards were created by the client, while the digital implementation was handled entirely within Electric Square. This was a collaborative process working with the client to iron out card verbiage and rules.</p>
 
           <div class="entry-sub">
+            <h4>Lead card skill localization task</h4>
+            <p class="brief-context">Lead a significant task of running through and checking the card skill localization for more than 300 cards. Set the plan for the task and lead it to completion within 2 weeks.</p>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Goals</p>
+                <ul>
+                  <li>Create and hook up localization for all cards skills</li>
+                  <li>Have all card skill text run through QA while minimizing manhours</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Obstacles</p>
+                <ul>
+                  <li>Skills were entered in code rather than data-controlled</li>
+                  <li>Variances in programmer implementation
+                    <ul>
+                      <li>Some would use systemic loc-keys, some would key in a loc-key themself</li>
+                    </ul>
+                  </li>
+                  <li>Some skills were difficult to trigger to run checks</li>
+                </ul>
+              </div>
+
+              <div class="brief-group">
+                <p class="brief-label">Results</p>
+                <ul>
+                  <li>Gather a list of systemic loc-keys from lead programmer</li>
+                  <li>Created an excel with a list of all cards and their description
+                    <ul>
+                      <li>Did a simple sort based on keywords like "Deal Damage", "Heal", etc.</li>
+                      <li>Added columns "Expected loc-key", "Actual loc-key", "Expected text", "Actual Text", "Loc created?", "QA done?"
+                        <ul>
+                          <li>Walked design team through the work plan, to fill the Expected loc-key and text based on loc guidelines and programmer provided systemic loc-keys</li>
+                          <li>Kept QA lead looped in on the process</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Within 1 day the list of expected loc-keys
+                    <ul>
+                      <li>Next was checking if the loc or matching text exists for each expected loc-key
+                        <ul>
+                          <li>If the loc did not exist, but matching text did, it meant the loc-key was wrongly named</li>
+                          <li>If loc did not exist, create it</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Once loc was all created, task was handed over to QA
+                    <ul>
+                      <li>QA would read from the excel which cards had skills that needed to be checked
+                        <ul>
+                          <li>Does the card text exist?
+                            <ul>
+                              <li>If not, fill in "Actual loc-key" with what is shown</li>
+                            </ul>
+                          </li>
+                          <li>Does the card text match expected?
+                            <ul>
+                              <li>If not, fill in "Actual Text"</li>
+                            </ul>
+                          </li>
+                          <li>If the card text matches expected, set QA done</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Design can then take a second pass to fix loc to match expected values</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Mentorship</h4>
+
+            <div class="brief">
+              <ul>
+                <li>Guided junior designer and reviewed their work
+                  <ul>
+                    <li>Ran through card UX tasks, suggesting areas to improve
+                      <ul>
+                        <li>Mentorship focused on UX principles rather than specific feedback</li>
+                        <li>i.e. Instead of "Don't shrink trait icons when card is small", more useful advice would be "Identify key card info, we always want to see those, even when the card sits in your hand."</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>Helped other designers with workflow/data issues
+                  <ul>
+                    <li>Explained the type of data edits which are prone to merge conflicts and options for resolving conflicts in the case auto-merge fails</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry-sub">
             <h4>Card and deck UX</h4>
             <p class="brief-context">Managed all card-related UX, from initial mock-up to implementation, and further iteration.</p>
 
@@ -405,10 +505,15 @@
                   </li>
                   <li>Analyze spikes in user drops from data
                     <ul>
-                      <li>Create hypothesis and test remedies
+                      <li>Create hypothesis
                         <ul>
                           <li>i.e. [User fails level] -&gt; [Levels hero] -&gt; [fails again] would indicate a progression wall</li>
                           <li>In above example, reasons could be lack of adoption of other reward loops, an issue with clarity of strategy, or level that is genuinely overtuned</li>
+                        </ul>
+                      </li>
+                      <li>Apply and test remedies
+                        <ul>
+                          <li>One fix was shifting introduction of Farming Event earlier from stage 50 to 38, reducing a spike in user drops at stage 40 from 20% to 7%.</li>
                         </ul>
                       </li>
                     </ul>
@@ -476,6 +581,8 @@
               <figcaption>Firebase data flow supporting the game's A/B tests.</figcaption>
             </figure>
 
+            <p>Lead on adoption of Firebase for A/B testing, exploring initial setup, communicating with Tech lead on requirements, then walking other designers through the step-by-step. Documented process for future use.</p>
+
             <div class="brief">
               <ul>
                 <li>Established separate Excel files for the A/B test</li>
@@ -484,6 +591,11 @@
                   <ul>
                     <li>Set remote config, percent of user base</li>
                     <li>Ran test and confirmed that players were being served different versions</li>
+                  </ul>
+                </li>
+                <li>Ran A/B tests to decide between conflicting directions for game tutorial
+                  <ul>
+                    <li>Improved D1 by 3% absolute by shifting introduction of Heroes to story stage 1</li>
                   </ul>
                 </li>
               </ul>
@@ -637,6 +749,37 @@
                 <ul>
                   <li>Tool significantly cut down data setup time, taking a 3-day task down to 0.5 day including manual in-game checks</li>
                   <li>Expanded tool out to all regularly run events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-sub">
+            <h4>Workflow optimization</h4>
+
+            <div class="brief">
+              <div class="brief-group">
+                <p class="brief-label">Achievements</p>
+                <ul>
+                  <li>Initiated and took charge of a process of phasing out redundant QA checks
+                    <ul>
+                      <li>Identified a set of checks that had negligible effect on the game</li>
+                      <li>Started a discussion on deprecation of said checks, gathering agreement from the design team to cut the checks</li>
+                      <li>Cuts saved 3 mandays per month without affecting quality of the game</li>
+                    </ul>
+                  </li>
+                  <li>Led a process of workflow reviews
+                    <ul>
+                      <li>Sat down with designers to understand the scope and process of their work</li>
+                      <li>Identified several areas for improvement
+                        <ul>
+                          <li>Some fixes were very simple to implement, such as adding formulas in the landing page to minimize data entry</li>
+                          <li>Other more complex tasks started the creation of automation tools</li>
+                          <li>Based on updated work estimates, the reviews saved a total of 5 workdays per month</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
